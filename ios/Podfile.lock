@@ -1,0 +1,126 @@
+PODS:
+  - Ads-Global (6.0.0.6):
+    - Ads-Global/BUAdSDK (= 6.0.0.6)
+  - Ads-Global/BUAdSDK (6.0.0.6):
+    - Ads-Global/Dep_Accurate
+  - Ads-Global/Dep_Accurate (6.0.0.6):
+    - BURelyFoundation_Global/Pangle (= 0.3.0.0)
+  - anythink_sdk (0.0.1):
+    - Flutter
+    - TPNApplovinSDKAdapter (= 6.3.57)
+    - TPNFacebookSDKAdapter (= 6.3.57)
+    - TPNiOS (= 6.3.57)
+    - TPNMintegralSDKAdapter (= 6.3.57)
+    - TPNPangleSDKAdapter (= 6.3.57)
+  - AppLovinSDK (12.4.2)
+  - BURelyFoundation_Global/AFNetworking (0.3.0.0)
+  - BURelyFoundation_Global/APM (0.3.0.0)
+  - BURelyFoundation_Global/Foundation (0.3.0.0):
+    - BURelyFoundation_Global/NETWork
+  - BURelyFoundation_Global/Gecko (0.3.0.0):
+    - BURelyFoundation_Global/Foundation
+  - BURelyFoundation_Global/Header (0.3.0.0)
+  - BURelyFoundation_Global/NETWork (0.3.0.0):
+    - BURelyFoundation_Global/AFNetworking
+  - BURelyFoundation_Global/Pangle (0.3.0.0):
+    - BURelyFoundation_Global/AFNetworking
+    - BURelyFoundation_Global/APM
+    - BURelyFoundation_Global/Foundation
+    - BURelyFoundation_Global/Gecko
+    - BURelyFoundation_Global/Header
+    - BURelyFoundation_Global/NETWork
+    - BURelyFoundation_Global/SDWebImage
+    - BURelyFoundation_Global/YYModel
+    - BURelyFoundation_Global/ZFPlayer
+    - BURelyFoundation_Global/Zip
+  - BURelyFoundation_Global/SDWebImage (0.3.0.0):
+    - BURelyFoundation_Global/Foundation
+  - BURelyFoundation_Global/YYModel (0.3.0.0)
+  - BURelyFoundation_Global/ZFPlayer (0.3.0.0):
+    - BURelyFoundation_Global/Foundation
+    - BURelyFoundation_Global/Zip
+  - BURelyFoundation_Global/Zip (0.3.0.0):
+    - BURelyFoundation_Global/Foundation
+  - FBAudienceNetwork (6.15.0)
+  - Flutter (1.0.0)
+  - MintegralAdSDK/All (7.6.6):
+    - MintegralAdSDK/BannerAd
+    - MintegralAdSDK/BidNativeAd
+    - MintegralAdSDK/InterstitialVideoAd
+    - MintegralAdSDK/NativeAd
+    - MintegralAdSDK/NativeAdvancedAd
+    - MintegralAdSDK/NewInterstitialAd
+    - MintegralAdSDK/RewardVideoAd
+    - MintegralAdSDK/SplashAd
+  - MintegralAdSDK/BannerAd (7.6.6):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/BidNativeAd (7.6.6):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/InterstitialVideoAd (7.6.6):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/NativeAd (7.6.6)
+  - MintegralAdSDK/NativeAdvancedAd (7.6.6):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/NewInterstitialAd (7.6.6):
+    - MintegralAdSDK/InterstitialVideoAd
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/RewardVideoAd (7.6.6):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/SplashAd (7.6.6):
+    - MintegralAdSDK/NativeAd
+  - TPNApplovinSDKAdapter (6.3.57):
+    - AppLovinSDK (= 12.4.2)
+    - TPNiOS (= 6.3.57)
+  - TPNFacebookSDKAdapter (6.3.57):
+    - FBAudienceNetwork (= 6.15.0)
+    - TPNiOS (= 6.3.57)
+  - TPNiOS (6.3.57):
+    - TPNiOS/TPNSDK (= 6.3.57)
+  - TPNiOS/TPNSDK (6.3.57)
+  - TPNMintegralSDKAdapter (6.3.57):
+    - MintegralAdSDK/All (= 7.6.6)
+    - TPNiOS (= 6.3.57)
+  - TPNPangleSDKAdapter (6.3.57):
+    - Ads-Global (= 6.0.0.6)
+    - TPNiOS (= 6.3.57)
+
+DEPENDENCIES:
+  - anythink_sdk (from `.symlinks/plugins/anythink_sdk/ios`)
+  - Flutter (from `Flutter`)
+
+SPEC REPOS:
+  trunk:
+    - Ads-Global
+    - AppLovinSDK
+    - BURelyFoundation_Global
+    - FBAudienceNetwork
+    - MintegralAdSDK
+    - TPNApplovinSDKAdapter
+    - TPNFacebookSDKAdapter
+    - TPNiOS
+    - TPNMintegralSDKAdapter
+    - TPNPangleSDKAdapter
+
+EXTERNAL SOURCES:
+  anythink_sdk:
+    :path: ".symlinks/plugins/anythink_sdk/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  Ads-Global: b8e67b39cd8bd730bf5ddd3836dc35878ba02567
+  anythink_sdk: b28e272044aa4c59f5d188974cd395fe7f23a2da
+  AppLovinSDK: 0d28d095238ec35cf1dc408ca2d983fb7a1803bb
+  BURelyFoundation_Global: d00389bb70e40dfe48123b70a6a148a989b8c798
+  FBAudienceNetwork: 80a035aa69cc3a71c99e44cb5c2874e4cef9909f
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  MintegralAdSDK: 4d19fa4637ad7f07916168528337d23ae6368181
+  TPNApplovinSDKAdapter: 74c395a92a391aa8bfa2e76df824ad1af0c08b94
+  TPNFacebookSDKAdapter: c2116b1c88e92bb66b6c79fdbb3438c83014543c
+  TPNiOS: 1b80f38d2f4895d1692141529b239097a47a815d
+  TPNMintegralSDKAdapter: dc09da44383ae2936bd7554fa0c60bde333cc1bc
+  TPNPangleSDKAdapter: afdd07786ea810c357021366e5c607f797ff12af
+
+PODFILE CHECKSUM: dc69633f35653dff55677508f50eb1d4ea9d189f
+
+COCOAPODS: 1.15.2
