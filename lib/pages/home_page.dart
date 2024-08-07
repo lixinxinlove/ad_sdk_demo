@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 
 import '../ad/topon_sdk.dart';
 import '../ad/topsize.dart';
+import '../ad/wigget/ad_platform_banner_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -34,10 +35,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(
         children: [
-          SizedBox(
-            height: 100,
-            child: PlatformBannerWidget("b62b41522d24a3"),
-          ),
+          const AdPlatformBannerWidget("b62b41522d24a3"),
           SizedBox(
             height: 100,
             child: getNativeWidget(),
@@ -243,5 +241,13 @@ class _HomePageState extends State<HomePage> {
 
   _showSplash() async {
     await ATSplashManager.showSplash(placementID: 'b62b41c7818614');
+  }
+
+  _hasInterAdReady({required String placementID}) async {
+    await ATInterstitialManager.hasInterstitialAdReady(
+      placementID: placementID,
+    ).then((value) {
+      debugPrint('flutter插屏广告视频缓存$value');
+    });
   }
 }
