@@ -1,11 +1,12 @@
 enum AdType {
-  native(5),
-  intertitial(1),
   banner(0),
+  intertitial(1),
   open(3),
-  reward(4);
+  reward(4),
+  native(5);
 
   final int code;
+
   const AdType(this.code);
 }
 
@@ -18,9 +19,11 @@ enum AdPlatform {
   applovin(7),
   topon(9),
   max(12),
-  tradplus(13);
+  tradplus(13),
+  mintegral(14);
 
   final int code;
+
   const AdPlatform(this.code);
 }
 
@@ -32,5 +35,6 @@ enum AdEvent {
   click(4);
 
   final int code;
+
   const AdEvent(this.code);
 }

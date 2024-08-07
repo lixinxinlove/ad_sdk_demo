@@ -14,6 +14,7 @@ class TopOnSDK {
     ListenerManager.interListen();
     ListenerManager.bannerListen();
     ListenerManager.nativeListen();
+    ListenerManager.splashListen();
 
    // adManager.scheduleTask();
   }
