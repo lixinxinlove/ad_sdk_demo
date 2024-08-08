@@ -1,6 +1,5 @@
 import 'dart:async';
 
-
 import 'package:anythink_sdk/at_index.dart';
 import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
@@ -95,7 +94,16 @@ class AdManager {
 
     if (intLocation?.isNotEmpty == true) {
       if (!_loadedAds.containsKey(AdType.intertitial)) {
-        Ad? ad = createAd(AdType.intertitial);
+        //  Ad? ad = createAd(AdType.intertitial);
+
+        Ad? ad = Ad(
+            id: 0,
+            appId: 0,
+            adsId: intLocation,
+            adsPlatform: AdPlatform.pangle.code,
+            position: 0,
+            adsType: AdType.intertitial.code);
+
         if (ad != null) {
           BaseAd baseAd = BaseAd(ad: ad, showAfterLoaded: true);
           baseAd.listener = listener;
@@ -271,7 +279,6 @@ class AdManager {
         });
   }
 
-
   Future<bool> hasInterstitialAdReady() async {
     BaseAd? baseAd = _loadedAds[AdType.intertitial.code];
     if (baseAd == null) {
@@ -292,7 +299,7 @@ class AdManager {
       return Future.value(false);
     }
     String placementID = getPlacementId(baseAd.ad);
-// Configuration.interstitialPlacementID
+    // Configuration.interstitialPlacementID
 
     await ATInterstitialManager.showInterstitialAd(
       placementID: placementID,
