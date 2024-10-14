@@ -28,6 +28,8 @@
 	<string>ca-app-pub-3940256099942544~1458002511</string>
 	<key>GADIsAdManagerApp</key>
 	<true/>
+
+
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>openapp.jdmobile</string>
@@ -709,5 +711,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+
+
+
+
+
 </dict>
 </plist>

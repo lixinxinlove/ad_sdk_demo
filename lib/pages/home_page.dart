@@ -180,21 +180,19 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-
-            Row(children: [
-
-
-              TextButton(
-                onPressed: () {
-                  Navigator.push(context, CupertinoPageRoute(builder: (buildContext) {
-                    return const DraggableScrollableSheetPage();
-                  }));
-                },
-                child: const Text("Draggable"),
-              ),
-
-            ],)
-
+            Row(
+              children: [
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        CupertinoPageRoute(builder: (buildContext) {
+                      return const DraggableScrollableSheetPage();
+                    }));
+                  },
+                  child: const Text("Draggable"),
+                ),
+              ],
+            )
           ],
         ),
       ),
